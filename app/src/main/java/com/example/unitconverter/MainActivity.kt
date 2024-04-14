@@ -85,7 +85,7 @@ fun UnitConverter() {
             Box {
                 // Input button
                 Button(onClick = { iExpanded = true }) {
-                    Text(text = "Select")
+                    Text(text = inputUnit)
                     Icon(Icons.Default.ArrowDropDown, contentDescription = "")
                 }
                 DropdownMenu(expanded = iExpanded, onDismissRequest = { iExpanded = false }) {
@@ -123,7 +123,7 @@ fun UnitConverter() {
             // Output box
             Box {
                 Button(onClick = { oExpanded = true }) {
-                    Text(text = "Select")
+                    Text(text = outputUnits)
                     Icon(Icons.Default.ArrowDropDown, contentDescription = "")
                 }
                 DropdownMenu(expanded = oExpanded, onDismissRequest = { oExpanded = false }) {
